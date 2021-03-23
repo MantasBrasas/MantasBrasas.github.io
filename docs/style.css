@@ -5,3 +5,24 @@ h1 {
 h2 {
 	color: rgba(26, 100, 155, 0.5);
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.centre {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+}
+
+.fahed {
+	margin-left: 25%;
+	width: 15%;
+}
