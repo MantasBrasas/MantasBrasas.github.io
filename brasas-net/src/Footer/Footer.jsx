@@ -1,7 +1,8 @@
+import styles from './Footer.module.css'
+
 function Footer(){
     return(
-        <footer>
-            <hr></hr>
+        <div className={styles.footer}>
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Projects</a></li>
@@ -11,7 +12,7 @@ function Footer(){
             <p>
                 <small>Thanks for viewing the website! &copy; {new Date().getFullYear()} brasas.net</small>
             </p>
-        </footer>
+        </div>
     );
 }
 

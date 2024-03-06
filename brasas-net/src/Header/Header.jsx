@@ -1,10 +1,15 @@
 import styles from "./Header.module.css"
 
 function Header(){
+    const handleClick = () => console.log("Yowch!");
+
     return(
         <div className={styles.header}>
-            <h1>MANTAS</h1>
-            <nav>
+            <div classname={styles.title}>
+                <h1 className={styles.name}>MANTAS</h1>
+                <h1 onClick={handleClick} className={styles.address}>brasas . net</h1>
+            </div>
+            <nav className={styles.navbar}>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Projects</a></li>
@@ -12,7 +17,6 @@ function Header(){
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <hr></hr>
         </div>
     );
 }

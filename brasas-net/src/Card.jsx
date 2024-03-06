@@ -1,4 +1,5 @@
 import ppic from './assets/argo.png'
+import PropTypes from 'prop-types'
 
 function Card(props){
     return(
@@ -10,6 +11,15 @@ function Card(props){
             <p className="card-text">{props.text}</p>
         </div>
     );
+}
+
+Card.propTypes = {
+    title: PropTypes.string,
+    text: PropTypes.string,
+}
+Card.defaultProps = {
+    title: "Mantas",
+    text: "yippee :)",
 }
 
 export default Card
