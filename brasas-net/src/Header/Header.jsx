@@ -12,7 +12,7 @@ function Header(){
             <nav className={styles.navbar}>
                 <ul>
                     <li><NavLink to='/'>Home</NavLink></li>
-                    <li><a href="">Projects</a></li>
+                    <li><a href="">Portfolio</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
