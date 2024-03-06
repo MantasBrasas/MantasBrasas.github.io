@@ -10,6 +10,7 @@ function Button(props){
 }
 
 Button.propTypes = {
+    id: PropTypes.number,
     title: PropTypes.string,
     link: PropTypes.string,
     target: PropTypes.string,

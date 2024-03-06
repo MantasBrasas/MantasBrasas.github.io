@@ -7,7 +7,7 @@ function Card(props){
 
     const buttons = props.buttons;
 
-    const buttonItems = buttons.map(button => <Button title={button.title} link={button.link}/>)
+    const buttonItems = buttons.map(button => <Button key={button.id} title={button.title} link={button.link}/>)
 
     return(
         <div className={styles.card}>
@@ -26,7 +26,7 @@ function Card(props){
 Card.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string,
-    buttons: PropTypes.arrayOf
+    buttons: PropTypes.arrayOf(PropTypes.shape({id: PropTypes.number, name: PropTypes.string, link: PropTypes.string, target: PropTypes.string})),
 }
 Card.defaultProps = {
     title: "Mantas",
