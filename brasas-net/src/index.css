@@ -37,3 +37,10 @@
   cursor: pointer;
   display: inline-block;
 }
+
+.body {
+  margin-top: -22px;
+  margin-left: -1vh;
+  margin-right: -1vh;
+  background-color: lime;
+}

@@ -1,7 +1,9 @@
+import styles from "./Header.module.css"
+
 function Header(){
     return(
-        <header>
-            <h1>Welcome to Brasas . net</h1>
+        <div className={styles.header}>
+            <h1>MANTAS</h1>
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
@@ -11,7 +13,7 @@ function Header(){
                 </ul>
             </nav>
             <hr></hr>
-        </header>
+        </div>
     );
 }
 
